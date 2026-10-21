@@ -77,6 +77,10 @@ class Library
     @items << item
   end
 
+  def remove_item(item)
+    @items.delete(item)
+  end
+  
   def display_all_items
     @items.each do |item|
       item.display_info
